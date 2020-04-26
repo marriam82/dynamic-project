@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <script src="https://kit.fontawesome.com/d868f4cf6e.js" crossorigin="anonymous"></script>
+          <title>Document</title>
+          <link rel="stylesheet" href="style.css">
+</head>
+<body>
+          <div class="container">
+                    <i class="fas fa-bars nav"></i>
+           <h1>
+                  Branding <br>
+                  About
+           </h1> 
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, fugit?
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, fugit?<br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, fugit?
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, fugit?<br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, fugit?
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, fugit?<br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, fugit?
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, fugit?<br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, fugit?
+
+           </p>
+           <h3>DEMO REE<br>
+                    FACES<br>
+                    ABOUT<br>
+                    CONTACT
+          </h3>        
+          </div>
+          <div class="side-bar-left">
+              
+                    <h1>Branding</h1>
+          </div>
+          <div class="side-bar-right">
+         <!--  -->
+          </div>
+
+           
+          <script>
+                    var nav = document.getElementsByClassName("nav")[0];
+                    var side =document.getElementsByClassName("side-bar-left")[0];
+                    var side_=document.getElementsByClassName("side-bar-right")[0];
+                    var bg =document.getElementsByTagName('h1')[0];
+                    var bg =document.getElementsByTagName('p')[0];
+                    var h =document.getElementsByTagName('h3')[0];
+
+
+                    nav.addEventListener('click' ,function()
+                    {
+                              
+                     side.style.position="absolute";
+                     side.style.transition="all 1s"
+                     nav.style.zIndex="4"
+                     side.style.left="0";
+                     side_.style.right="0";
+                     side_.style.position="absolute";
+                     side_.style.transition="all 1s";
+                     bg.style.opacity="0";
+                     h.style.opacity="1";
+                    });
+          
+             
+
+          </script>
+</body>
+
+</html>
